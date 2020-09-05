@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+
+
+    <label for="First Number">Preliminary Grade</label>
+    <input id="prelim" type="text" placeholder="Enter a Value..."><br>
+
+    <label for="First Number">Midterm Grade</label>
+    <input id="midterm" type="text" placeholder="Enter a Value..."><br>
+    
+    <label for="First Number">Final Grade</label>
+    <input id="final" type="text" placeholder="Enter a Value..."><br>
+
+    <button onclick="btnsubmit()">Submit</button>
+
+    <div id="preview">
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
