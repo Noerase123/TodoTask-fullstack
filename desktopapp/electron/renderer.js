@@ -5,12 +5,4 @@
 // selectively enable features needed in the rendering
 // process.
 
-const first = document.getElementById('prelim');
-const second = document.getElementById('midterm');
-const third = document.getElementById('final');
-const btnsubmit = () => {
-
-    const sum = first + second + third;
-
-    window.alert(sum);
-}
+console.log("hello world");
