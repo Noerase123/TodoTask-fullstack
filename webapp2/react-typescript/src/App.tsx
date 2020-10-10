@@ -1,12 +1,13 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Index from './components/Index'
+import Index from './components/Index/index'
 
 function App() {
   return (
-    <React.Fragment>
+    <div>
       <Index/>
-    </React.Fragment>
+    </div>
   );
 }
 
